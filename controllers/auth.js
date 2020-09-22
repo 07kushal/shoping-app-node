@@ -4,9 +4,10 @@ const crypto = require("crypto");
 const nodemailer = require("nodemailer");
 const mailgun = require("mailgun-js");
 const { validationResult } = require("express-validator");
+//create a account and sever for mailng.
 const mg = mailgun({
-    apiKey: "62b3dfdabf1ee02f34b7dda9b95672a4-ed4dc7c4-041602c4",
-    domain: "sandbox1253a77ead3c446490b29b2b72963a1f.mailgun.org",
+    apiKey: "your_api_key",
+    domain: "your_domain_url",
 });
 
 exports.getLogin = (req, res, next) => {
